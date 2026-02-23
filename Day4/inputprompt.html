@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let input;
+    let number;
+     while(true){
+        input = prompt("Enter a number");
+        if (input === null) {
+            alert("Input cancelled.");
+            break;
+        }
+        number = parseInt(input);
+        if (isNaN(number)) {
+
+            alert("That's not a valid number. Please try again.");
+        } else {
+            if (number > 0) {
+                alert("The number is positive.");
+            } else if (number < 0) {
+                alert("The number is negative.");
+            } else {
+                alert("The number is zero.");
+            }
+            break;
+        }   
+
+
+     }
+     </script>
+
+</body>
+</html>

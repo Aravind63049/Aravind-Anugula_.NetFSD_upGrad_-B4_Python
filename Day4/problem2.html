@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Checker</title>
+</head>
+<body>
+
+    <script>
+        let day = prompt("Enter a day of the week:");
+
+        if (day !== null) {
+            switch (day.toLowerCase()) {
+
+                case "monday":
+                    alert("It's the start of the week!");
+                    break;
+
+                case "tuesday":
+                    alert("It's Tuesday!");
+                    break;
+
+                case "wednesday":
+                    alert("It's Wednesday!");
+                    break;
+
+                case "thursday":
+                    alert("It's Thursday!");
+                    break;
+
+                case "friday":
+                    alert("It's Friday!");
+                    break;
+
+                case "saturday":
+                    alert("It's Saturday!");
+                    break;
+
+                case "sunday":
+                    alert("It's Sunday!");
+                    break;
+
+                default:
+                    alert("That's not a valid day of the week.");
+            }
+        }
+    </script>
+
+</body>
+</html>
