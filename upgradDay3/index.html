@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .grid  div {
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+        <div>iphone</div>
+        <div>samsung</div>
+        <div>huawei</div>
+        <div>oppo</div>
+        <div>vivo</div>
+        <div>xiaomi</div>
+    </div>
+
+</body>
+</html>

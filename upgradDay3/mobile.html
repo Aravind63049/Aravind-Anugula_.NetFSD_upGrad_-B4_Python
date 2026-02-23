@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aravind</title>
+
+<style>
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+
+.navbar {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.nav-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+
+.products-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.product-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product-box:hover {
+    transform: translateY(-5px);
+}
+
+@media (min-width: 600px) {
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        display: inline-block;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h1>My Website</h1>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+</div>
+
+
+<div id="home" class="section">
+    <h2>Home</h2>
+    <p>Welcome to our website.</p>
+</div>
+
+
+<div id="products" class="section">
+    <h2>Products</h2>
+    <div class="products-container">
+        <div class="product-box">Product 1</div>
+        <div class="product-box">Product 2</div>
+        <div class="product-box">Product 3</div>
+        <div class="product-box">Product 4</div>
+        <div class="product-box">Product 5</div>
+        <div class="product-box">Product 6</div>
+        <div class="product-box">Product 7</div>
+        <div class="product-box">Product 8</div>
+        <div class="product-box">Product 9</div>
+        <div class="product-box">Product 10</div>
+        <div class="product-box">Product 11</div>
+        <div class="product-box">Product 12</div>
+
+    </div>
+</div>
+
+
+<div id="contact" class="section" style="background:#2a5298; color:white;">
+    <h2>Contact Us</h2>
+    <a href="https://www.google.com" style="color: black;"><p>Email: aravind@gmail.com</p></a>
+</div>
+
+</body>
+</html>
